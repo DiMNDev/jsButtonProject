@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript Button</title>
+  </head>
+  <body onload="init()">
+    <div class="mainContain RGBBG" id="RGBBG">
+      <div class="topBar RGBBG" id="RGBBG">
+        <h1>Pretty Pattys</h1>
+      </div>
+      <div id="imgOverlay"></div>
+      <img src="/Images/Slider.png" id="patty" alt="" />
+      <p class="instructions">Play with the sliders</p>
+      <!--Color sliders-->
+      <div class="sliders">
+        <label for="rangeRed"
+          >Red:
+          <p id="redVal" class="displayValue">0</p>
+        </label>
+        <input type="range" id="rangeRed" min="0" max="255" />
+        <label for="rangeGreen">
+          Green:
+          <p id="greenVal" class="displayValue">0</p>
+        </label>
+        <input type="range" id="rangeGreen" min="0" max="255" />
+        <label for="rangeBlue"
+          >Blue:
+          <p id="blueVal" class="displayValue">0</p>
+        </label>
+        <input type="range" id="rangeBlue" min="0" max="255" />
+      </div>
+      <!--Effect sliders-->
+      <div class="sliders">
+        <!-- Hue -->
+        <label for="rangeHue"
+          >Hue:
+          <p id="hueVal" class="displayValue">0</p>
+        </label>
+        <input type="range" id="rangeHue" min="0" max="360" step="1" />
+        <!-- Saturation -->
+        <label for="rangeSaturation">
+          Saturation:
+          <p id="saturationVal" class="displayValue">0</p>
+        </label>
+        <input type="range" id="rangeSaturation" min="0" max="3" step="0.1" />
+        <!-- Contrast -->
+        <label for="rangeContrast"
+          >Contrast:
+          <p id="contrastVal" class="displayValue">1</p>
+        </label>
+        <input type="range" id="rangeContrast" min="0" max="3" step="0.1" />
+      </div>
+      <br />
+      <button id="btn">BIG RED BUTTON</button>
+      <p></p>
+    </div>
+    <script src="sliders.js"></script>
+  </body>
+</html>
